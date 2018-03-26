@@ -1,0 +1,6 @@
+/.coverage/
+/.pytest_cache/
+*.zip
+/coverage.xml
+/test-reports/
+/.coverage
