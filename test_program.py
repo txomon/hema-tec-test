@@ -95,9 +95,9 @@ def test_read_csv_file(csv_content, output, tmpdir):
 
     if output == ValueError:
         with pytest.raises(output):
-            tuple(read_csv_file(file_csv))
+            tuple(read_csv_file(str(file_csv)))
     else:
-        assert output == tuple(read_csv_file(file_csv))
+        assert output == tuple(read_csv_file(str(file_csv)))
 
 
 @pytest.mark.parametrize('entries, output', (

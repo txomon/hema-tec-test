@@ -80,7 +80,8 @@ def extract_week_information(entries):
 
 def generate_week_summary(description, week):
     week_value = []
-    for day, value in week.items():
+    for day in WEEK_DAYS:
+        value = week[day]
         day_value = {'day': day, 'value': value}
         if day in ('mon', 'tue', 'wed'):
             specific_value = day_value['square'] = value ** 2

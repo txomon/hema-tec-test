@@ -4,3 +4,5 @@
 /coverage.xml
 /test-reports/
 /.coverage
+*.pyc
+/__pycache__/
